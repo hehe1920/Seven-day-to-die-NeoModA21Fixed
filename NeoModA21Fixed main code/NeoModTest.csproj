@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>25690dd7-17c0-4a8d-9d3d-8f045d2206ce</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>NeoModTest</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.IMGUIModule" />
+    <Reference Include="UnityEngine.TextRenderingModule" />
+    <Reference Include="System.Xml" />
+    <Reference Include="0Harmony" />
+    <Reference Include="UnityEngine.InputLegacyModule" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine.UI" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="NeoModTest\API.cs" />
+    <Compile Include="NeoModTest\Cheat.cs" />
+    <Compile Include="NeoModTest\ESP.cs" />
+    <Compile Include="NeoModTest\ESPUtils.cs" />
+    <Compile Include="NeoModTest\Objects.cs" />
+    <Compile Include="NeoModTest\SceneDebugger.cs" />
+    <Compile Include="NeoModTest\CustomConsole.cs" />
+    <Compile Include="NeoModTest\Xml2Object.cs" />
+    <Compile Include="NeoModTest\Property.cs" />
+    <Compile Include="NeoModTest\DisplayValue.cs" />
+    <Compile Include="NeoModTest\Item.cs" />
+    <Compile Include="NeoModTest\Items.cs" />
+    <Compile Include="NeoModTest\GameObjectDetails.cs" />
+    <Compile Include="NeoModTest\Loader.cs" />
+    <Compile Include="NeoModTest\TrainerMenu.cs" />
+    <Compile Include="NeoModTest\LocalExtensions.cs" />
+    <Compile Include="NeoModTest\EnumeratorExtensions.cs" />
+    <Compile Include="NeoModTest\ItemModsXML\ModsXml2Object.cs" />
+    <Compile Include="NeoModTest\ItemModsXML\Property.cs" />
+    <Compile Include="NeoModTest\ItemModsXML\ItemModifier.cs" />
+    <Compile Include="NeoModTest\ItemModsXML\PassiveEffect.cs" />
+    <Compile Include="NeoModTest\ItemModsXML\Requirement.cs" />
+    <Compile Include="NeoModTest\ItemModsXML\EffectGroup.cs" />
+    <Compile Include="NeoModTest\ItemModsXML\ItemPropertyOverrides.cs" />
+    <Compile Include="NeoModTest\ItemModsXML\TriggeredEffect.cs" />
+    <Compile Include="NeoModTest\ItemModsXML\DisplayValue.cs" />
+    <Compile Include="NeoModTest\ItemModsXML\ItemModifiers.cs" />
+    <Compile Include="NeoModTest\Utils\SingletonMonoBehaviour!1.cs" />
+    <Compile Include="NeoModTest\Utils\ResourceUtils.cs" />
+    <Compile Include="NeoModTest\UI\GUIComboBox.cs" />
+    <Compile Include="NeoModTest\UI\InterfaceMaker.cs" />
+    <EmbeddedResource Include="NeoModTest.UI.guisharp-box.png" />
+    <EmbeddedResource Include="NeoModTest.UI.guisharp-window.png" />
+    <EmbeddedResource Include="ILRepack.List" />
+  </ItemGroup>
+</Project>
